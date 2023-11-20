@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Overlock&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="header__menu">
+                        <li class="header__menu-list"> <a href="./index.html">Accueil</a> </li>
+                        <li class="header__menu-list"> <a href="./a-propos.html">A-propos</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="formulaire">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Contactez-moi!</h2>
+                    <div class="col-12">
+                        <input type="text" placeholder="NOM et Prénom" class="champ  mb-4" id="nom">
+                        <div id="messagederreurnom" class="alert erreur" role="alert"></div>
+                    </div>
+                    <div class="col-12" > 
+                        <input type="text" min="10" max="13" placeholder="Téléphone" class="champ  mb-4" id="tel">
+                        <div id="messagederreurtel" class="alert erreur" role="alert"></div>
+                    </div>
+                    <div  class="col-12">
+                        <input type="email" placeholder="E-mail" class="champ  mb-5" id="mail">
+                        <div id="messagederreurmail" class="alert erreur" role="alert"></div>
+                    </div>
+                    <div class="col-12" > 
+                        <label for="mess" class="formulaire__label-message">Votre message</label>
+                        <textarea id="mess" class="champ mb-4" rows="6"></textarea>
+                        <div id="messagederreurmess" class="alert erreur" role="alert"></div>
+                    </div>
+                   
+                    <div class="btnconnect">
+                        <button class="btn btn-primary envoi" onclick="verify(), verifytel(), verifymail(), verifymess()">Envoyer</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer__logo">
+                    <span class="col-4 md-col-12 rs"><img class="linkedin" src="./images/vectorlinkedin.png" alt="logo linkedin">    <strong>machintrucbidul</strong></span>
+                    <span class="col-4 md-col-12 rs"><img class="mail" src="./images/Vectormail.png" alt=" logo e-mail">     <strong>martin.dwwm@gmail.com</strong> </span>
+                    <span class="col-4 md-col-12 rs"><img class="wa" src="./images/Vector.png" alt="logo whatsapp">        <strong>0033 614 903 118</strong></span>
+                </div>
+
+                <div class="col-12 credits">
+                    <p>Conçu sur Figma et codé sur Visual Studio Code par Martin Chédaille, en novembre 2023.     </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
